@@ -1,0 +1,29 @@
+$group-padding: 10px;
+$mobile-padding: 20px;
+
+.mobile-vehilcle-selecter__cta {
+  font-size: 1rem;
+  background-color: $white;
+  border-radius: $border-radius;
+  padding: 4px 15px;
+  width: 100%;
+  text-align: left;
+  margin-bottom: .5em;
+  display: flex;
+  align-items: center;
+  height: 46px;
+
+  .ion-android-car {
+    color: $brand-blue;
+    margin-right: 6px;
+    font-size: 1.5em;
+  }
+
+  span {
+    color: $gray;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+}

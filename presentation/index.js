@@ -14,9 +14,8 @@ import {
   Quote,
   Slide,
   Text,
-  Layout,
-  Fit,
-  Fill,
+  CodePane,
+  Link
 } from 'spectacle';
 
 // Import theme
@@ -82,20 +81,32 @@ export default class Presentation extends React.Component {
         <Slide>
           <Heading>Étape 1</Heading>
           <Text>
-            Le navigateur demande au DNS l'adresse réelle du serveur contenant le site web (vous trouvez l'adresse du magasin).
+            Le navigateur demande au DNS l'adresse réelle du serveur contenant le site web.
           </Text>
+          <Notes>
+            <Heading>dns</Heading>
+            Annuaire pour sites web. Lorsque vous saisissez une adresse dans le navigateur, ce dernier consulte le DNS pour trouver l'adresse réelle du site web avant de la récupérer. Le navigateur a besoin de savoir sur quel serveur le site web est situé pour pouvoir envoyer des requêtes HTTP au bon endroit.
+          </Notes>
         </Slide>
         <Slide>
           <Heading>Étape 2</Heading>
           <Text>
             Le navigateur envoie une requête HTTP au serveur pour lui demander d'envoyer une copie du site web au client. Ce message, et les autres données envoyées entre le client et le serveur, sont échangés par l'intermédiaire de la connexion internet.
           </Text>
+          <Notes>
+            <Heading>http</Heading>
+            Protocole de communication entre le serveur et le client
+          </Notes>
         </Slide>
         <Slide>
           <Heading>Étape 3</Heading>
           <Text>
             Si le serveur accepte la requête émise par le client, le serveur envoie un message « 200 OK » au client qui signifie : « Pas de problème, tu peux consulter ce site web, le voici ». Ensuite le serveur commence à envoyer les fichiers du site web au navigateur.
           </Text>
+          <Notes>
+            <Heading>status code</Heading>
+            Permet de déterminer le résultat d'une requête ou d'indiquer une erreur au client.
+          </Notes>
         </Slide>
         <Slide>
           <Heading>Étape 4</Heading>
@@ -113,26 +124,51 @@ export default class Presentation extends React.Component {
           </Text>
         </Slide>
         <Slide>
-          <Text>C'est quoi un framework</Text>
+          <Text>
+            En programmation informatique, un framework (appelé aussi infrastructure logicielle, socle d'applications, infrastructure de développement, ou cadre d'applications4 au Canada) désigne un ensemble cohérent de composants logiciels structurels, qui sert à créer les fondations ainsi que les grandes lignes de tout ou d’une partie d'un logiciel (architecture).
+          </Text>
         </Slide>
         <Slide>
           <Image src={images.reactLogo} width={500} />
-          <Text>Bref description</Text>
+          <Text>
+            React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
+          </Text>
         </Slide>
         <Slide>
           <Image src={images.djangoLogo} width={600}/>
-          <Text>Bref description</Text>
+          <Text>
+            Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.
+          </Text>
         </Slide>
         <Slide>
           <Heading>Language de programmation</Heading>
         </Slide>
         <Slide>
           <Image src={images.htmlLogo} width={500} />
-          <Text>Code sample</Text>
+        </Slide>
+        <Slide>
+          <Heading>HTML</Heading>
+          <Link href="http://help.websiteos.com/websiteos/example_of_a_simple_html_page.htm">Exemple page HTML</Link>
+        </Slide>
+        <Slide>
+          <Heading>CSS</Heading>
+          <CodePane
+            lang="scss"
+            source={require('raw-loader!../assets/css.example')}
+            margin="20px auto"
+            overflow="overflow"
+          />
         </Slide>
         <Slide>
           <Image src={images.jsLogo} width={500} />
-          <Text>Code sample</Text>
+        </Slide>
+        <Slide>
+          <CodePane
+            lang="jsx"
+            source={require('raw-loader!../assets/jsx.example')}
+            margin="20px auto"
+            overflow="overflow"
+          />
         </Slide>
       </Deck>
     );

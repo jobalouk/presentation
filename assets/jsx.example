@@ -1,0 +1,36 @@
+return (
+  <div className={CN(
+    'vehicle-selecter',
+    fixed && (!vehicle || (vehicle && gotVehicleFromNetwork)) ? 'vehicle-selecter--fixed' : null,
+    className)}
+  >
+    <DeviceWidthUp width={MD_BREAKPOINT_UP}>
+      <React.Fragment>
+        <PlateForm initialValues={{plate: vehicle && vehicle.plate}} />
+        <div className="vehicle-selecter__separator">
+          <VehicleSelecterTooltip
+            open={plateTooltipOpened}
+            onRequestClose={closeVehicleSelecterTooltip}
+            html={
+              <p className="m-0">Saisissez votre immatriculation ou la marque de votre véhicule.</p>
+            }
+          >
+            <div className="vehicle-selecter__separator__or">ou</div>
+          </VehicleSelecterTooltip>
+        </div>
+        <SearchByBrandForm onHide={onHide} ctaTitle={ctaTitle} />
+      </React.Fragment>
+    </DeviceWidthUp>
+    <DeviceWidthDown width={MD_BREAKPOINT_UP}>
+      <VehicleSelecterMobile
+        onHide={onHide}
+        ctaTitle={ctaTitle}
+        manufacturer={manufacturer}
+        year={year}
+        model={model}
+        type={type}
+        plate={vehicle && vehicle.plate}
+      />
+    </DeviceWidthDown>
+  </div>
+)
