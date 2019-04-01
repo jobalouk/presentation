@@ -7,6 +7,7 @@
 En fonction des réponses on peut travailler avancer dans la préze ou répondre à des questions.
 
 Vers la fin on peut lancer des petits jeux pour coder des trucs ou faire de l'inté.
+- Faire des démos pendant la prez (ajouter une slide pour ça)
 - Codecombat
 - HourOfCode
 - Codecademy
