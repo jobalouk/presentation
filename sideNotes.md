@@ -1,9 +1,8 @@
-Qu'est-ce que vous savez du développement web ?
-Comment les composants s'interfacent ?
-Comment visuellement une page est construite ?
-Comment ont invente une logique business pour travailler avec des données et
-intéragir avec dans le client ?
-La différence entre un serveur et un client ?
+- Qu'est-ce que vous savez du développement web ?
+- Comment les composants s'interfacent ?
+- Comment visuellement une page est construite ?
+- Comment ont invente une logique business pour travailler avec des données et intéragir avec dans le client ?
+- La différence entre un serveur et un client ?
 
 En fonction des réponses on peut travailler avancer dans la préze ou répondre à des questions.
 
