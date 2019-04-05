@@ -3,10 +3,12 @@
 - Comment visuellement une page est construite ?
 - Comment ont invente une logique business pour travailler avec des données et intéragir avec dans le client ?
 - La différence entre un serveur et un client ?
+- Je sais pas, d'autres trucs
 
 En fonction des réponses on peut travailler avancer dans la préze ou répondre à des questions.
 
 Vers la fin on peut lancer des petits jeux pour coder des trucs ou faire de l'inté.
+- Codesandbox pour faire du react
 - Faire des démos pendant la prez (ajouter une slide pour ça)
 - Codecombat
 - HourOfCode

@@ -160,7 +160,7 @@ export default class Presentation extends React.Component {
           />
         </Slide>
         <Slide>
-          <Image src={images.jsLogo} width={500} />
+          <Image src={images.reactLogo} width={500} />
         </Slide>
         <Slide>
           <CodePane
